@@ -10,6 +10,7 @@ import hashlib
 import io
 import json
 import os
+import shutil
 import subprocess
 import tarfile
 import tempfile
@@ -39,6 +40,12 @@ def main():
         OMP_THREAD_LIMIT="4",
         NUMBA_NUM_THREADS="4",
     )
+    nvcc = shutil.which("nvcc")
+    if nvcc is None:
+        candidate = Path(os.environ.get("CUDA_HOME", "/usr/local/cuda")) / "bin/nvcc"
+        if not candidate.is_file():
+            raise RuntimeError("A CUDA development toolkit with nvcc is required")
+        environment["PATH"] = str(candidate.parent) + os.pathsep + os.environ["PATH"]
     for key in ("baseline", "prefetch", "candidate"):
         revision = sources[key]
         exists = subprocess.run(

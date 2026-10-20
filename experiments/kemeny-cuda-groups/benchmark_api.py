@@ -55,7 +55,7 @@ def describe(command):
 metadata = dict(
     gpu=describe(["nvidia-smi", "-L"]),
     compiler=describe(["nvcc", "--version"]),
-    host_compiler=describe(["g++", "--version"]),
+    host_compiler=describe([os.environ.get("CUDAHOSTCXX", "g++"), "--version"]),
     python=platform.python_version(),
     numpy=np.__version__,
     threads=os.environ.get("OMP_NUM_THREADS"),
