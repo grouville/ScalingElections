@@ -40,8 +40,7 @@ def main():
         OMP_THREAD_LIMIT="4",
         NUMBA_NUM_THREADS="4",
     )
-    nvcc = shutil.which("nvcc")
-    if nvcc is None:
+    if not args.prepare_only and shutil.which("nvcc") is None:
         candidate = Path(os.environ.get("CUDA_HOME", "/usr/local/cuda")) / "bin/nvcc"
         if not candidate.is_file():
             raise RuntimeError("A CUDA development toolkit with nvcc is required")
