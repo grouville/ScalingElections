@@ -1,0 +1,497 @@
+{
+  "seed": 42,
+  "baseline_commit": "25bf88568cff938c96a777b8776be41677fb1f27",
+  "scope": "complete public Mojo GPU calls, one warm call before each sample, alternating isolated processes",
+  "cases": [
+    {
+      "n": 30,
+      "dtype": "uint64",
+      "baseline_ms": 614.958188,
+      "candidate_ms": 615.055453,
+      "paired_speedup": 0.9998006472434283
+    }
+  ],
+  "pairs": [
+    {
+      "baseline": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 614958188,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ],
+      "candidate": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 615011608,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 615055453,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ],
+      "baseline": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 614932840,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ]
+    },
+    {
+      "baseline": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 615090575,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ],
+      "candidate": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 615309303,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 615313298,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ],
+      "baseline": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 614743397,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ]
+    },
+    {
+      "baseline": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 615145187,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ],
+      "candidate": [
+        {
+          "n": 30,
+          "dtype": "uint64",
+          "elapsed_ns": 614477821,
+          "result": {
+            "ranking": [
+              3,
+              14,
+              5,
+              6,
+              26,
+              20,
+              10,
+              18,
+              4,
+              19,
+              28,
+              11,
+              15,
+              0,
+              23,
+              12,
+              13,
+              8,
+              29,
+              21,
+              25,
+              9,
+              17,
+              22,
+              24,
+              1,
+              7,
+              27,
+              16,
+              2
+            ],
+            "score": 17784,
+            "winners": [
+              3
+            ],
+            "multiplicity": "unique"
+          }
+        }
+      ]
+    }
+  ],
+  "baseline_sources": {
+    "kemeny.mojo": "af03b6173daa683905ec9bc9b06f7b15570cd03e05e1c80b0cfce4e8a0d72fd8",
+    "scalingelections.mojo": "bc44abe3904ce73babb205bd40f6210dbba96c9f0cef6d62700b5646d87d30e7",
+    "ballots.mojo": "7e5c11aa3787a3ff7d58a40d27ad137417bfb039b1942716b2750f1eb4e5d51b"
+  },
+  "candidate_sources": {
+    "kemeny.mojo": "af03b6173daa683905ec9bc9b06f7b15570cd03e05e1c80b0cfce4e8a0d72fd8",
+    "scalingelections.mojo": "bc44abe3904ce73babb205bd40f6210dbba96c9f0cef6d62700b5646d87d30e7",
+    "ballots.mojo": "7e5c11aa3787a3ff7d58a40d27ad137417bfb039b1942716b2750f1eb4e5d51b"
+  },
+  "same_code_control": true
+}

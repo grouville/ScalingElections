@@ -1,0 +1,43 @@
+{
+  "source_hashes": {
+    "baseline": {
+      "kemeny.py": "36c024d9b6243f19b82cea28ccf0b60cb4c7841856ef8407ba7b93c9e4ad6dce",
+      "kemeny.mojo": "af03b6173daa683905ec9bc9b06f7b15570cd03e05e1c80b0cfce4e8a0d72fd8",
+      "kemeny.cuh": "e37b4fcedb47c27c1bc81f6b34b0616bccd2f1f162b796b168b4353f4125ff5c",
+      "types.cuh": "fb65ff04000ec95750191f75161f69d5c28400708b9459461e041e5c5f94e305",
+      "test.py": "8c76185b2ce997cb86155fa5a0d40861eb09ba68f8364b6c78c069d68f636671"
+    },
+    "candidate": {
+      "kemeny.py": "0434786860b1fb4375537ebb34c1c9043584d37b577f4166620b1776272e9831",
+      "kemeny.mojo": "bbc76fdf1dd20a6f571a62a27969f74cfd1d79bccbb31f46205a6f75f55c75bf",
+      "kemeny.cuh": "a5b5c1c82e9fbfd6739e26acf5067fc9ae06f4de89befff9fb9482e11998cf5c",
+      "types.cuh": "fb65ff04000ec95750191f75161f69d5c28400708b9459461e041e5c5f94e305",
+      "test.py": "da511e4b3a0bd617c19d5b1a6d5e0b650d77a071b39123319754b64b56d8a5f4"
+    }
+  },
+  "cpu_model": "AMD EPYC 9555 64-Core Processor",
+  "cuda": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0\n",
+  "gxx": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "gpu": "GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition\nMIG 1g.24gb     Device  0:",
+  "gpu_artifact_sha256": {
+    "scalingelections_cuda.cpython-312-x86_64-linux-gnu.so": "2d16feaa588e9b022d0555d87adc4268734a4c47c9ab23ffa382c7e42cc78ffb",
+    "build/scalingelections_mojo.so": "9b6d0a87e08b8233cf8be279e4abdd242683ca313b00c54a2a3ff4d2777f1807",
+    "build/lib.linux-x86_64-cpython-312/scalingelections_cuda.cpython-312-x86_64-linux-gnu.so": "2d16feaa588e9b022d0555d87adc4268734a4c47c9ab23ffa382c7e42cc78ffb"
+  },
+  "candidate_commit": "3bd6ba382fb3b79f2b563acd65030f774e1fc83a",
+  "baseline_commit": "25bf88568cff938c96a777b8776be41677fb1f27",
+  "merged_main_commit": "7bfe183801a22c902e0a7edde0c6b74233317d9e",
+  "test_summary": "938 passed in 407.32s (0:06:47)",
+  "seed": 42,
+  "repetitions": 12,
+  "exhaustive_scale": 1,
+  "skipped": 0,
+  "sanitizers": {
+    "memcheck": "0 errors",
+    "racecheck": "0 errors",
+    "synccheck": "0 errors"
+  },
+  "review_commit": "0988826f628e59ef0f7304eb6f9664bcc5ab8c8f",
+  "review_tree_identical_to_measured_candidate": true
+}
