@@ -614,7 +614,7 @@ def compute_kemeny_costs_gpu[
 def compute_kemeny_trace_gpu[
     StoredCountDataType: DType, //, ArithmeticDataType: DType, ArithmeticMode: Arithmetic
 ](ctx: DeviceContext, preferences: VoteMatrixView[StoredCountDataType, _]) raises -> List[KemenyTraceWord]:
-    """Fills the cost table by high-mask population count and traces it on the GPU."""
+    """Fills the cost table with one launch per high-mask population count and traces it on the GPU."""
     require_kemeny_score_range[ArithmeticDataType, ArithmeticMode](preferences)
     var num_candidates = preferences.num_candidates
     var sums = KemenySums[ArithmeticDataType, ArithmeticMode](preferences)
@@ -637,7 +637,11 @@ def compute_kemeny_trace_gpu[
 def compute_kemeny_ranking_gpu[
     StoredCountDataType: DType, //, ArithmeticDataType: DType, ArithmeticMode: Arithmetic
 ](ctx: DeviceContext, preferences: VoteMatrixView[StoredCountDataType, _]) raises -> KemenySolution:
-    """Solves exact consensus using shared groups of subsets, with traceback on the GPU."""
+    """
+    Solves exact consensus on the GPU, filling related subsets together in shared memory.
+
+    One launch handles each high-mask population count; the ranking is traced on the GPU.
+    """
     return kemeny_solution_from_trace[ArithmeticDataType](
         compute_kemeny_trace_gpu[ArithmeticDataType, ArithmeticMode](ctx, preferences)
     )
