@@ -307,7 +307,7 @@ def test_kemeny_solves_a_disagreement_wider_than_thirty_two_bits(
         kemeny.compute_kemeny_ranking(preferences, score_type=ScoreType.uint32)
 
 
-@pytest.mark.parametrize("num_candidates", [7, 8, 9, 15, 16, 17])
+@pytest.mark.parametrize("num_candidates", [1, 7, 8, 9, 15, 16, 17])
 @pytest.mark.parametrize("tied", [False, True])
 def test_kemeny_complete_cost_tables(num_candidates: int, tied: bool, implementation: Implementation) -> None:
     """Every subset has its closed-form cost under complete ties or unanimous strict preferences."""
