@@ -39,5 +39,7 @@
     "synccheck": "0 errors"
   },
   "review_commit": "0988826f628e59ef0f7304eb6f9664bcc5ab8c8f",
-  "review_tree_identical_to_measured_candidate": true
+  "review_tree_identical_to_measured_candidate": true,
+  "documentation_followup_commit": "01d8252d30e068c937b4191762366a9b08813523",
+  "documentation_followup_changes_calculations": false
 }

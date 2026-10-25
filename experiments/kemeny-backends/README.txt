@@ -44,3 +44,6 @@ improve, and the uint64 path retains its vectorizable candidate loop.
 The sanitizer transcripts cover complete Mojo GPU cost tables at 1, 7, 8, 9,
 15, 16 and 17 candidates, with ties and strict profiles, at every score width.
 This validation used NVIDIA hardware; AMD and Apple execution was not measured.
+
+Documentation follow-up: 01d8252d30e068c937b4191762366a9b08813523
+This restores launch-order wording without changing the calculation code.
